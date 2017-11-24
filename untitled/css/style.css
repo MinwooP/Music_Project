@@ -16,6 +16,8 @@
 	body
 	{
 		background: #202020 url(images/img01.jpg) repeat;
+
+		.
 	}
 
 	body,input,textarea,select
@@ -231,6 +233,7 @@
 			margin: 0;
 			padding: 0;
 			list-style: none;
+			text-align:center;
 		}
 		
 			ul.style1 li
@@ -239,11 +242,22 @@
 				border-top: 1px solid;
 				border-color: rgba(0,0,0,.1);
 			}
-			
+
+			ul.style1 p
+
+			{
+				text-align:center;
+			}
+
+			ul.style1 a{
+				text-align:center;
+			}
+
 			ul.style1 li:first-child
 			{
 				padding-top: 0;
 				border-top: 0;
+				text-align:center;
 			}
 			
 			ul.style1 img
@@ -875,6 +889,7 @@
 	.sidebar header h2
 	{
 		font-size: 1.6em;
+		text-align:center;
 	}
 
 /*********************************************************************************/
