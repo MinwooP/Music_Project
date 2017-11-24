@@ -889,7 +889,6 @@
 	.sidebar header h2
 	{
 		font-size: 1.6em;
-		text-align:center;
 	}
 
 /*********************************************************************************/
@@ -987,12 +986,13 @@
 	
 	.balloon {
 		padding: 1.87em;
-		background: url(images/img08.jpg) repeat left top;
+		background-image: url(/untitled/images/123.png);
 		border-radius: 5px;
 		line-height: 180%;
 		font-size: 1.2em;
-		color: #333;
+		color: rgba(255,255,255,.5);
 	}
+
 	
 	.ballon-bgbtm {
 		height: 1.87em;
@@ -1000,5 +1000,5 @@
 	
 	.balloon strong
 	{
-		color: #333 !important;
+		color: #FFF !important;
 	}
