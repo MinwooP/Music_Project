@@ -4,6 +4,7 @@
     Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
 
+
 @charset 'UTF-8';
 
 @font-face{font-family:'FontAwesome';src:url('font/fontawesome-webfont.eot?v=4.0.1');src:url('font/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'),url('font/fontawesome-webfont.woff?v=4.0.1') format('woff'),url('font/fontawesome-webfont.ttf?v=4.0.1') format('truetype'),url('font/fontawesome-webfont.svg?v=4.0.1#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}
@@ -53,8 +54,10 @@
 	}
 
 	/* Don't forget to set this to something that matches the design */
+
 	a
 	{
+		<!-- 하이퍼링크색: 빨간색 -->
 		color: #ff0000;
 	}
 
@@ -99,6 +102,7 @@
 		header h2
 		{
 			font-size: 2.5em;
+			font-family: 'Roboto Condensed', sans-serif;
 		}
 
 		header .byline
@@ -880,7 +884,8 @@
 		border-top: 1px solid;
 		border-color: rgba(0,0,0,.2);
 	}
-	
+
+
 	.sidebar header h2
 	{
 		font-size: 1.6em;
@@ -997,4 +1002,3 @@
 	{
 		color: #333 !important;
 	}
-
