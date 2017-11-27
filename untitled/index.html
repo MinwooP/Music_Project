@@ -27,11 +27,12 @@
             var audio1 = new Audio('images/레드벨벳-피카부.mp3');
             $('#music1').click(function() {
                 switch(count1%2){
-                    case 0: <!-- $('#music1').addClass("fa"); $('#music1').addClass("fa-pause-circle-o");-->
-                        audio1.play();break;
-                    case 1: <!-- $('#music1').addClass("fa"); $('#music1').addClass("fa-play-circle");
+                    case 0: audio1.play();break;
+                        <!-- $('#music1').addClass("fa"); $('#music1').addClass("fa-pause-circle-o");-->
+                    case 1:  audio1.pause();break;
+                        <!-- $('#music1').addClass("fa"); $('#music1').addClass("fa-play-circle");
                         $('#music1').removeClass("fa"); $('#music1').removeClass("fa-pause-circle");-->
-                        audio1.pause();break;
+
                 }
                 count1++;
             });
