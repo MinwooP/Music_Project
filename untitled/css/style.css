@@ -863,6 +863,7 @@
 	#banner
 	{
 		position: relative;
+		margin-top: -1.6em;
 		padding: 12em 0em;
 		background: url(../images/banner.jpg) no-repeat center;
 		background-size: cover;

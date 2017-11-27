@@ -27,8 +27,10 @@
             var audio1 = new Audio('images/레드벨벳-피카부.mp3');
             $('#music1').click(function() {
                 switch(count1%2){
-                    case 0: audio1.play();break;
-                    case 1: <!--addClass("fa");addClass("fa-pause-circle"); removeClass("fa");removeClass("fa-play-circle");-->
+                    case 0: <!-- $('#music1').addClass("fa"); $('#music1').addClass("fa-pause-circle-o");-->
+                        audio1.play();break;
+                    case 1: <!-- $('#music1').addClass("fa"); $('#music1').addClass("fa-play-circle");
+                        $('#music1').removeClass("fa"); $('#music1').removeClass("fa-pause-circle");-->
                         audio1.pause();break;
                 }
                 count1++;
@@ -137,9 +139,11 @@
         <nav id="nav">
             <ul>
                 <li class="active"><a href="index.html">Homepage</a></li>
+                <!--
                 <li><a href="left-sidebar.html">Left Sidebar</a></li>
                 <li><a href="right-sidebar.html">Right Sidebar</a></li>
                 <li><a href="no-sidebar.html">No Sidebar</a></li>
+                -->
             </ul>
         </nav>
     </div>
@@ -176,7 +180,7 @@
                         <i class="fa fa-music" aria-hidden="true"></i>&nbsp;
                         피카부 (Peek-A-Boo)</p>
                     <p><img src="images/pica.png" alt="" style = "position: relative">
-                        <i id = "music1" class="fa fa-play-circle fa-2x" style = "color: white; margin-left: -1.5em; margin-top: 6em;  position: absolute "aria-hidden="true"></i></p></i>
+                        <i id = "music1" class="fa fa-play-circle fa-2x" style = "color: white; margin-left: -1.5em; margin-top: 6em; position: absolute "aria-hidden="true"></i></p></i>
                     <a href="http://music.naver.com/album/index.nhn?albumId=2282455" class="button">더보기</a>
                 </section>
             </div>
@@ -285,8 +289,8 @@
             <div class="6u">
                 <section>
                     <header>
-                        <h2>Calvin Harris<!--(캘빈 해리스) 트렌드 메이커이자 사운드 크리에이터--></h2>
-                        <span class="byline">ARTIST - SNS가 발굴한 1세대 스타, Calvin Harris(캘빈 해리스)</span>
+                        <h2 style = "border-bottom: 1.5px solid black">Weekly Hot Issues</h2>
+                        <span class="byline">Calvin Harris(캘빈 해리스) - SNS가 발굴한 1세대 스타</span>
                     </header>
                     <p><a href = "https://music.bugs.co.kr/specialView/interview/O0DVCWBZFLD6VWLB1KHW?&page=3&sort=new&wl_ref=list_sp_01_sub"> </a><img src="images/img-harris.jpg" alt="" style = "width: 38em; height: 20em"> </a></p>
                     <div> <strong> ALBUM - 사운드 크리에이터가 빚은 2017 뉴웨이브 [Funk Wav Bounces Vol.1]</strong></div>
@@ -419,7 +423,7 @@
         </div>
     </div>
     <!-- Main -->
-
+</div>
     <!-- Featured -->
     <div id="featured">
         <div class="container">
@@ -472,7 +476,7 @@
 
                 <div class="3u">
                     <section>
-                        <h2 style="margin-left: 1.8em">공연/페스티벌</h2>
+                        <h2 style="margin-left: 1.8em">FESTIVAL</h2>
                         <ul class="default">
                             <li>
                                 <h3><a href="https://music.bugs.co.kr/specialView/concert/N8XOKEHAV54485W482IK?&page=1&sort=new&wl_ref=list_sp_03_sub"><strong>G.Soul(지소울) - 미니앨범 [Circles (제자리)] 쇼케이스 초대!</strong></a></h3>
@@ -492,7 +496,7 @@
 
                 <div class="3u">
                     <section>
-                        <h2 style="margin-left:1.8em">뮤직 어워즈</h2>
+                        <h2 style="margin-left:1.8em">MUSIC AWARDS</h2>
                         <p style="margin-left:1.8em"><a href="http://www.melon.com/mma/index.htm"><strong>- Melon Music Awards 2017 - </strong></a></p>
                         <video src="images/MMA.mp4" controls =controls style="margin-left:-1em; width:270px; height:150px"></video>
                         <p>2017 멜론뮤직어워드! 올해 최고의 아티스트는? 11월 27일, TOP10 투표가 시작됩니다. 티저 영상을 감상하고 올해의 수상자를 예측해보세요!</p>
@@ -501,7 +505,7 @@
 
                 <div class="3u">
                     <section>
-                        <h2 style="margin-left: 1.8em">뮤직 포스트</h2>
+                        <h2 style="margin-left: 1.8em">MUSIC POST</h2>
                         <p><a href="https://music.bugs.co.kr/specialView/focus/8O8RCBX87VW94X8CFVAU"><strong>월간 팝 뉴스 - 에미넴의 트럼프 디스, 새로운 힙합여제 탄생 </strong></a></p>
                         <p>BET 힙합 어워즈는 행사가 시작된 2006년 이래 'BET 사이퍼'라는 이름의 부대 행사를 꾸준히 열고 있다.
                             올해는 무려 에미넴(Eminem)이 깜짝 사이퍼를 통해 모습을 드러내 많은 이들을 놀라게 했다.
@@ -514,11 +518,13 @@
             </div>
         </div>
     </div>
+
     <!-- /Footer -->
 
     <!-- Copyright -->
     <div id="copyright" class="container">
-        Design By <a href="내 깃허브 주소">MinwooP </a> & <a href="규림이 깃허브 주소"> Gyurim </a> (<a href="WebGit스터디주소">in Web & Git Study </a>)
+        Designed By <a href="https://github.com/MinwooP" style = "color: ghostwhite"><em>MinwooP</em></a> & <a href="https://github.com/gyurim" style = "color: ghostwhite"><em>Gyurim</em></a>
+        (Special Thanks to <a href="https://github.com/orgs/INHA-LANDVIBE/dashboard" style = "color: ghostwhite"><em>INHA-LANDVIBE</em></a>)
     </div>
 </div>
 </body>
