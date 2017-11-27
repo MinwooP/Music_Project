@@ -4,6 +4,7 @@
     Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
 
+
 @charset 'UTF-8';
 
 @font-face{font-family:'FontAwesome';src:url('font/fontawesome-webfont.eot?v=4.0.1');src:url('font/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'),url('font/fontawesome-webfont.woff?v=4.0.1') format('woff'),url('font/fontawesome-webfont.ttf?v=4.0.1') format('truetype'),url('font/fontawesome-webfont.svg?v=4.0.1#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}
@@ -15,6 +16,8 @@
 	body
 	{
 		background: #202020 url(images/img01.jpg) repeat;
+
+		.
 	}
 
 	body,input,textarea,select
@@ -32,7 +35,7 @@
 		font-weight: 300;
 	}
 	
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
 		{
 			color: inherit;
 			text-decoration: none;
@@ -51,8 +54,10 @@
 	}
 
 	/* Don't forget to set this to something that matches the design */
+
 	a
 	{
+		<!-- 하이퍼링크색: 빨간색 -->
 		color: #ff0000;
 	}
 
@@ -97,6 +102,7 @@
 		header h2
 		{
 			font-size: 2.5em;
+			font-family: 'Roboto Condensed', sans-serif;
 		}
 
 		header .byline
@@ -227,6 +233,7 @@
 			margin: 0;
 			padding: 0;
 			list-style: none;
+			text-align: left;
 		}
 		
 			ul.style1 li
@@ -235,11 +242,22 @@
 				border-top: 1px solid;
 				border-color: rgba(0,0,0,.1);
 			}
-			
+
+			ul.style1 p
+
+			{
+				text-align:center;
+			}
+
+			ul.style1 a{
+				text-align:center;
+			}
+
 			ul.style1 li:first-child
 			{
 				padding-top: 0;
 				border-top: 0;
+				text-align:center;
 			}
 			
 			ul.style1 img
@@ -269,6 +287,8 @@
 
 			ul.style2 img
 			{
+				width: 50px;
+				height: 50px;
 				float: left;
 				padding-right: 1em;
 			}
@@ -843,6 +863,7 @@
 	#banner
 	{
 		position: relative;
+		margin-top: -1.6em;
 		padding: 12em 0em;
 		background: url(../images/banner.jpg) no-repeat center;
 		background-size: cover;
@@ -864,11 +885,23 @@
 		border-top: 1px solid;
 		border-color: rgba(0,0,0,.2);
 	}
-	
+
+
 	.sidebar header h2
 	{
 		font-size: 1.6em;
 	}
+
+	th
+	{
+		text-align: left;
+	}
+
+	#th3
+	{
+		margin-top: 50%;
+	}
+
 
 /*********************************************************************************/
 /* Footer                                                                        */
@@ -882,6 +915,7 @@
 	
 	#footer .container
 	{
+
 	}
 
 	#footer h2
@@ -965,12 +999,13 @@
 	
 	.balloon {
 		padding: 1.87em;
-		background: url(images/img08.jpg) repeat left top;
+		background-image: url(/untitled/images/123.png);
 		border-radius: 5px;
 		line-height: 180%;
 		font-size: 1.2em;
-		color: #333;
+		color: rgba(255,255,255,.5);
 	}
+
 	
 	.ballon-bgbtm {
 		height: 1.87em;
@@ -978,6 +1013,5 @@
 	
 	.balloon strong
 	{
-		color: #333 !important;
+		color: #FFF !important;
 	}
-
